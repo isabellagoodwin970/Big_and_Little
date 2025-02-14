@@ -1,8 +1,9 @@
-const express = require('express');
+
+const express = require('express')
 const router = express.Router();
 const orgController = require('../controllers/orgController');
-
-router.route('/organizations')
-    .get(orgController.getOrganizations);
-
+//i'm not sure what path i'm supposed to use here
+router.route('/userOrgs')
+    .post(orgController.registerOrganization);
 module.exports = router;
+
